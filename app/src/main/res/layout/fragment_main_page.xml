@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainPage"
+    android:background="@drawable/background">
+
+    // search bar
+    <RelativeLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/bg_searchbar">
+        <ImageView
+            android:id="@+id/img_searchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/searchbarbutton" />
+
+        <EditText
+            android:id="@+id/et_search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:hint="Bexley, UK"
+            android:layout_toRightOf="@+id/img_searchbutton"
+            android:textColor="#d4d5d4"
+            android:textColorHint="#d4d5d4"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    // Temperature and current date view
+    <RelativeLayout
+        android:id="@+id/temperature_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_view">
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="120sp"
+            android:shadowColor="#5e3c5a"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temperature"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#5e3c5a"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="9 Aug 2016"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
+
+    // Weather image by current weather
+    <RelativeLayout
+        android:id="@+id/weather_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/temperature_layout">
+        <ImageView
+            android:id="@+id/weather_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mostlysunnyv3"
+            android:layout_centerHorizontal="true"></ImageView>
+        <TextView
+            android:id="@+id/weather_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_image"
+            android:textAlignment="center"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:shadowColor="#5e3c5a"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="10"></TextView>
+    </RelativeLayout>
+
+    // Share part
+    <RelativeLayout
+        android:id="@+id/share_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weather_status"
+        android:gravity="bottom">
+        <ImageView
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share"
+            android:layout_centerInParent="true">
+        </ImageView>
+        <ImageView
+            android:id="@+id/scroll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_button"
+            android:background="@drawable/scroll_button"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"></ImageView>
+    </RelativeLayout>
+
+</RelativeLayout>

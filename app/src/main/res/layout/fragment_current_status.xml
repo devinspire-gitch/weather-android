@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SubPages.CurrentStatus"
+    android:orientation="vertical">
+
+    // Weather details by current weather
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/status_weather_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/mostlysunnyv3"></ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/status_weather_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Sun"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_uv_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="UV: 0.0"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_temp_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="64.2 °F (17.9 °C)"
+                android:textColor="#FFFFFF"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    // Wind details by current weather
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/status_wind_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/cloudyv3"></ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/status_wind_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Wind"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_spd_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="SPD: 1.1"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_wind_direction_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="From the North at 1.1"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_pressure_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="MPH Guesting to 2.5 MPH"
+                android:textColor="#FFFFFF"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    // Location details by current location
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/status_location_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/compassv2"
+            android:layout_gravity="center"></ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/status_location_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Location"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_lat_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Lat: 51.5728"
+                android:textColor="#FFFFFF"></TextView>
+            <TextView
+                android:id="@+id/status_long_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Lon: -1.8811"
+                android:textColor="#FFFFFF"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_map_api_key">AIzaSyCo2azujVGWedU4RJO023FiOl3-PC3Pe2c</string>
+    <string name="no_internet_message">Please check internet connection</string>
+    <string name="no_city_found_message">No city found with this name</string>
+    <string name="invalid_api_key_message">API key is invalid. Wait for next update</string>
+    <string name="network_exception_message">Network connection problem</string>
+</resources>

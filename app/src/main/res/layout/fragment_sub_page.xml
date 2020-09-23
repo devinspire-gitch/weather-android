@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.SubPage"
+    android:background="@drawable/background">
+
+    //select option for temperature type and pressure type
+    <LinearLayout
+        android:id="@+id/option_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/temerature_option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textOff="°C"
+            android:textOn="°F"
+            app:showText="true"
+            android:thumb="@drawable/sw_thumb"
+            app:track="@drawable/sw_track" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/pressure_option"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textOff="MPH"
+            android:textOn="KPH"
+            app:showText="true"
+            android:thumb="@drawable/sw_thumb"
+            app:track="@drawable/sw_track_pressure" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option_view"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+        //include sub pages
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/sub_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"/>
+
+        //slide dot
+        <LinearLayout
+            android:id="@+id/SliderDots"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_below="@id/sub_page">
+
+            <ImageView
+                android:id="@+id/img_dot_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/viewpager_dot" />
+
+            <ImageView
+                android:id="@+id/img_dot_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_10"
+                android:src="@drawable/viewpager_nondot" />
+            <ImageView
+                android:id="@+id/img_dot_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_10"
+                android:src="@drawable/viewpager_nondot" />
+            <ImageView
+                android:id="@+id/img_dot_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_margin_10"
+                android:src="@drawable/viewpager_nondot" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

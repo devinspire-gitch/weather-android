@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/line"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+    <TextView
+        android:id="@+id/weatherforecast_date_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:text="Tue"
+        android:layout_gravity="center"></TextView>
+    <ImageView
+        android:id="@+id/weatherforecast_weather_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/mostlysunnyv3"
+        android:layout_gravity="center"></ImageView>
+    <TextView
+        android:id="@+id/weatherforecast_weather_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:textColor="#FFFFFF"
+        android:text="A few Clouds. Low 11C."
+        android:layout_gravity="center"></TextView>
+</LinearLayout>
